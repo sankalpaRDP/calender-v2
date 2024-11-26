@@ -1,3 +1,18 @@
+        const firebaseConfig = {
+          apiKey: "AIzaSyB7E8fEkrGoc6ODFO-2DDSJwPSnNalxyVY",
+          authDomain: "calender-v2-14061.firebaseapp.com",
+          projectId: "calender-v2-14061",
+          storageBucket: "calender-v2-14061.firebasestorage.app",
+          messagingSenderId: "114170285429",
+          appId: "1:114170285429:web:28c686a2d1b7f36e5ad73c"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+
+        // Initialize Firestore
+        const db = firebase.firestore();
+
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/service-worker.js').then(() => {
       console.log('Service Worker Registered');
